@@ -101,6 +101,11 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@github.com:Alankyleee/Alankyleee.github.io.git
-  branch: main
+  type: rsync
+  host: 139.224.226.17
+  user: root
+  port: 22
+  root: "/var/www/k_blog"
+  key: "/Users/yunkaixu/.ssh/id_ed25519"
+  delete: true
+  progress: true
